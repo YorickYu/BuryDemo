@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="button1" destination="rgt-YD-bCt" id="RbE-6B-jpQ"/>
+                <outlet property="button2" destination="hWQ-5F-jvg" id="EEF-Hr-I8c"/>
+                <outlet property="button3" destination="OzG-0b-TpU" id="SxL-rN-5bY"/>
+                <outlet property="button4" destination="lvZ-HC-aPu" id="PCg-cY-6Ph"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgt-YD-bCt">
+                    <rect key="frame" x="154" y="173" width="106" height="30"/>
+                    <state key="normal" title="action_1_button"/>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="Txi-af-gLS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWQ-5F-jvg">
+                    <rect key="frame" x="152.5" y="263" width="109" height="30"/>
+                    <state key="normal" title="action_2_button"/>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="6jw-YU-LHA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzG-0b-TpU">
+                    <rect key="frame" x="152.5" y="353" width="109" height="30"/>
+                    <state key="normal" title="action_3_button"/>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="enx-vl-e2K"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvZ-HC-aPu">
+                    <rect key="frame" x="152.5" y="443" width="109" height="30"/>
+                    <state key="normal" title="action_4_button"/>
+                    <connections>
+                        <action selector="click:" destination="-1" eventType="touchUpInside" id="Rbt-8B-Bjq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lvZ-HC-aPu" firstAttribute="centerX" secondItem="OzG-0b-TpU" secondAttribute="centerX" id="7D7-Do-3zM"/>
+                <constraint firstItem="OzG-0b-TpU" firstAttribute="top" secondItem="hWQ-5F-jvg" secondAttribute="bottom" constant="60" id="7NM-Id-fI6"/>
+                <constraint firstItem="hWQ-5F-jvg" firstAttribute="centerX" secondItem="rgt-YD-bCt" secondAttribute="centerX" id="AH8-9G-c26"/>
+                <constraint firstItem="rgt-YD-bCt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="173" id="DEb-Hd-Phe"/>
+                <constraint firstItem="OzG-0b-TpU" firstAttribute="centerX" secondItem="hWQ-5F-jvg" secondAttribute="centerX" id="Fu7-Z8-vzx"/>
+                <constraint firstItem="rgt-YD-bCt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L4v-s2-MQE"/>
+                <constraint firstItem="hWQ-5F-jvg" firstAttribute="top" secondItem="rgt-YD-bCt" secondAttribute="bottom" constant="60" id="Pdg-CS-eGE"/>
+                <constraint firstItem="lvZ-HC-aPu" firstAttribute="top" secondItem="OzG-0b-TpU" secondAttribute="bottom" constant="60" id="cib-KB-N7N"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
